@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Заявка на общежитие</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Форма подачи заявки на общежитие</h2>
+        <div class="form-group">
+            <label for="studentId">ID студента:</label>
+            <input type="number" id="studentId" value="0">
+            <small class="hint">Введите 0, чтобы пропустить проверку студента</small>
+        </div>
+
+        <div class="form-group">
+            <label for="buildingId">Номер корпуса:</label>
+            <input type="number" id="buildingId" value="0">
+            <small class="hint">Введите 0, чтобы пропустить проверку корпуса</small>
+        </div>
+
+        <div class="form-group">
+            <label for="roomId">Номер комнаты:</label>
+            <input type="number" id="roomId" value="101">
+        </div>
+
+        <button onclick="checkApplication()">Проверить заявку</button>
+
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
